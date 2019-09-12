@@ -1,0 +1,298 @@
+%-------------------------
+% Resume in Latex
+% Author : Krishna Varadarajan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+% include necessary headers
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/kvarada/}{\Large Krishna Varadarajan}} & Email : \href{mailto:krishna2014vit@gmail.com}{krishna2014vit@gmail.com}\\
+  \href{https://www.linkedin.com/in/kvarada/}{\color{blue}linkedin.com/in/kvarada} & Mobile : +1-xxx-xxx-xxxx
+%   \href{https://yourshot.nationalgeographic.com/profile/1852939/}{\color{blue}National Geographic profile} %uncomment if needed
+\end{tabular*}
+
+% % %-----------Vision statement-----------------
+% \section{Vision}
+% My passion lies at the intersection of algorithms and software. I strongly believe that autonomous systems can help solve challenging problems across domains. I am carving out a path for myself which would enhance my understanding of the mathematics, and implementation challenges of the underlying algorithms. This would subsequently enable me to develop safe, and highly efficient autonomous systems. \\ 
+% \textbf{Languages proficient in:} C++, Python, MATLAB, R \\
+% \textbf{Current Interests:} Control Systems, State Estimation, Sensor Fusion, Filtering, Robotics, Algorithms
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Pennsylvania State University}{University Park, PA}
+      {Master of Science in Mechanical Engineering;  GPA: 3.96/4.00}{Aug. 2016 -- May 2019}
+      
+      \vspace{1mm}
+    \resumeSubheading
+      {Vellore Institute of Technology, VIT University}{Vellore, India}
+      {Bachelor of Technology in Mechanical Engineering;  GPA:  9.20/10.00 (Top 2\% in program)}{Aug. 2010 -- May 2014}
+     
+     \vspace{1mm}
+    \resumeSubheading
+      {Indian Institute of Technology - Madras}{Chennai, India}
+      {Visiting Summer Research Fellow} {May 2013 -- July 2013}
+      
+  \resumeSubHeadingListEnd
+
+%-----------Eye catching points-----------------
+\section{Brief}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Relevant Coursework:}{ Linear Control, Digital Control, Mechatronics, Kalman Filtering, Matrix Algebra, Micrcomputer Interfacing}
+        \resumeSubItem{Languages proficient in:}{C++, Python, MATLAB, R, HTML/CSS}
+        \resumeSubItem{Current Interests:}{Control Systems, State Estimation, Sensor Fusion, Filtering, Robotics, Algorithms}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.nio.io/}{\color{blue}NIO USA Inc.}}{San Jose, CA}
+      {Perception Engineer}{Nov 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Production Quality Software Development}
+           {Designing, developing, integrating, and testing production quality C++ software for implementing sensor fusion algorithms for the L4 perception stack}
+        \resumeItem{Object Tracking and Data-Association}
+          {Designing, and implementing tracking and data-association algorithms such as IMM, Robust Filtering, and MHT for objects obtained from RADAR, LiDAR, and vision sensors}
+        \resumeItem{KPI Development and Regression Testing}
+          {Developed the KPI (Key Performance Indicators) pipeline for testing, and tuning the sensor fusion algorithms; KPIs now being used for regression testing, and in the Jenkins build}
+        \resumeItem{Multiple Hypothesis Tracking (MHT)}
+          {Developed track-to-track association logic (track labeling) across hypotheses for MHT-based object fusion algorithm}
+        \resumeItem{DNN based combined detection \& tracking}
+          {Leading the sensor fusion team's efforts on integrating PCA feature embeddings from the DNN model with object fusion from LiDAR detection pipeline to perform perform appearance model based low-level object tracking}
+        \resumeItem{Additional contributions:}
+           {Robust, time and space-optimized Intersection Over Union (IOU) algorithm; Parser for KITTI and Scale AI annotation datasets; Sim environment development for tracker validation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.volvotrucks.us/}{\color{blue}Volvo Group}}{Hagerstown, MD}
+      {Advanced Technology and Research Co-Op}{Aug 2017 - Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Algorithm Design}
+          {Developed algorithms to calculate trip parameters, driving behavior, hotel mode, and stop-start analysis parameters for Volvo customer trucks for energy management operations with teams in Greensboro, and Lyon, France}
+        \resumeItem{App Development}
+          {Developed an application in C\# for engine dynamometer test cell to run vehicle    duty-cycles through a Simulink model}
+        \resumeItem{Road Topology Estimation}
+          {Developed an algorithm to estimate the road topology distribution of a route using log-vehicle data, and simulation data}
+      \resumeItemListEnd
+      
+     \resumeSubheading
+      {\href{https://www.mne.psu.edu/toboldlygo/}{\color{blue}Intelligent Vehicles and Systems Group}}{University Park, PA}
+      {Graduate Student Researcher (\href{https://arpa-e.energy.gov/?q=arpa-e-programs/nextcar}{\color{blue}NEXTCAR project})}{Jan 2017 - Nov 2018}
+      \resumeItemListStart
+        \resumeItem{Hardware Instrumentation}
+          {Instrumented an experimental truck with ADAS sensors for HIL, SIL, and on-road testing}
+        \resumeItem{On-Road Data Collection}
+          {Collected test data on the experimental truck on multiple routes in the states of PA and MD}
+        \resumeItem{Traffic Modeling and Simulation}
+          {Set-up traffic modeling and simulation capabilities in the research lab, and performed microscopic traffic simulations on AIMSUN}
+        \resumeItem{Traffic Estimation Algorithm}
+          {Developed a traffic estimation algorithm to visualize traffic captured using one front-facing RADAR on a mobile truck}
+        \resumeItem{Free Space Estimation}
+        {Developed algorithm to measure the available free space in ego-vehicle's lane by fusing lane map with front-facing RADAR and camera
+        }
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {\href{https://www.me.psu.edu/}{\color{blue}Department of Mechanical Engineering, Penn State}}{University Park, PA}
+      {Graduate Teaching Assistant}{Aug 2016 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Classes Assisted/Taught}
+          {Vehicle Road Dynamics (senior-year class), ME Design Methodology (junior-year class), Introduction to Thermal Sciences (inter-department class)}
+        \resumeItem{Highlight}
+          {Mentored 8 project teams to deliver industry-sponsored semester-long design projects as part of the junior-year design class}
+      \resumeItemListEnd
+      
+    %  \pagebreak
+     
+     \resumeSubheading
+      {\href{https://www.iisc.ac.in/}{\color{blue}Indian Institute of Science}}{Bengaluru, India}
+      {Junior Research Fellow}{July 2014 - June 2016}
+      \resumeItemListStart
+        \resumeItem{Smart-Manufacturing Lab}
+          {Designed, and established India's first smart manufacturing laboratory, funded by Boeing R\&T}
+        %   \vspace{-4mm}
+        \resumeItem{Patient Transfer Device}
+          {Led a research team of four research fellows to design, and develop an assistive device to transfer patients from one bed to another. The work was filed for an Indian patent in June 2015.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Autonomous Search-and-Rescue Robot}
+      {Designed the finite state machine for a robot capable of identifying, and picking-up tennis balls while solving any given maze simultaneously using the bug (reactive navigation) automata}
+    \resumeSubItem{Autonomous Object-Picking Arm}
+      {A 2-link robotic arm capable of detecting desired objects in its range, and placing them at a desired location using a camera, and inverse kinematics algorithms}
+    \resumeSubItem{LQG Controller with Kalman Filter}
+      {Implemented a LQG controller with current and delayed Kalman estimators for 6 states of a 3-disk rotor system}
+    \resumeSubItem{Near-Minimum Time Controller}
+      {Implemented the continuous-time analogous of a deadbeat controller to drive the states of 3-disk rotor system from 30$^{\circ}$ to 0$^{\circ}$}
+     \resumeSubItem{Formula SAE Italy}
+      {Designed and manufactured the suspension and steering system for a 4-wheel open cockpit racing car powered by an IC engine}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C++, Python, MATLAB, R, HTML/CSS}
+     \hfill
+     \textbf{Build Systems}{: CMake, waf}
+   }
+   \item{
+     \textbf{(Meta)OS}{: LINUX, ROS, MacOS}
+     \hfill
+     \textbf{Misc.}{: GDB, Google Test, Git, JIRA}
+     }
+ \resumeSubHeadingListEnd
+
+%
+%--------PATEMTS----------
+\section{Patents}
+ \resumeSubHeadingListStart
+   \item{
+    \textbf{``Subject Transfer Apparatus"} - Application No.: 2972/CHE/2015 (\textit{Status: Pending})\\
+    /brief: Assistive device to transfer patients with limited mobility from one platform to another
+   }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%
+%--------PUBLICATIONS---------
+\section{Publications}
+ \resumeSubHeadingListStart
+   \item{
+   \textbf{Master's thesis - Penn State} (2019) ``Analyzing the Effects of Geometric Lane Constraints on RADAR-based Sensing of Available Vehicle Headway using Mapped Lane Geometry and Camera Registration of Lane Position" [\href{https://etda.libraries.psu.edu/files/final_submissions/18697}{\color{blue}Link}]
+   }
+   \item{
+   \textbf{Krishna Varadarajan, et al.} (2019) (\textit{Accepted in invited session}) ``Analyzing the Effects of Geometric Lane Constraints on RADAR-based Sensing of Available Vehicle Headway using Mapped Lane Geometry and Camera Registration of Lane Position" \textit{In:} ASME Dynamic Systems and Control Conference (DSCC)
+   }
+   \item{
+    \textbf{V.S.Krishna Prasad, et al.} (2013) ``Simulation and Modeling of Performance Characteristic of Wire Cut EDM on Inconel825 using Multiple Regression and ANN." \textit{In:} International Conference on Mathematical Computer Engineering - ICMCE. pp. 157-165 [\href{http://www.conference.bonfring.org/papers/vit_icmce2013/icmce25.pdf}{\color{blue}Link}]
+   }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%
+%--------SELECTED ACHIEVEMENTS------------
+\section{Selected Milestones}
+ \resumeSubHeadingListStart
+   \item{
+    [2010] Undergraduate merit award (VIT University)
+   }
+   \item{
+    [2011] Represented VIT University in \href{https://www.formula-ata.it/formula-sae-italy/}{\color{blue}Formula SAE Italy}
+   }
+   \item{
+    [2012-13] Winner and runner-up across medical hackathons organized by \href{http://www.globalhealthmgh.org/camtech/}{\color{blue}CAMTech} in India, Uganda, and USA
+   }
+   \item{
+    [2013] Selected one of 30 students from India for RedX workshop by \href{http://cameraculture.media.mit.edu/}{\color{blue}Camera Culture Group} at MIT Media Lab
+   }
+   \item{
+    [2013] Selected to present a portable EOG-EEG device to the former President of India Late Dr. APJ Abdul Kalam (Camera Culture Group, MIT Media Lab) 
+   }
+   \item{
+    [2016] 100\% financial support to pursue M.S. in Mechanical Engineering (Penn State University)
+   }
+ \resumeSubHeadingListEnd
+ 
+% %
+% %--------Hobbies section-----------
+% \section{Interesting facts about me}
+%  \resumeSubHeadingListStart
+%   \item{
+%     Trained in Indian classical music art form - Carnatic vocals
+%   }
+%   \item{
+%     Training for 5k, 10k, and half-marathons
+%   }
+%   \item{
+%     Fascinated by sunrise and sunsets, and I embark on dawn and dusk hikes to encounter them
+%   }
+%   \item{
+%     Huge admirer of penguins, pandas, and polar bears
+%   }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
